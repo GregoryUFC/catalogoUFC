@@ -2,7 +2,6 @@
     include_once('./model/connection.php');
 ?>
 
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -130,10 +129,10 @@
                                     <select name="tipologia" class="form-select" aria-label="Default select example"
                                         id="chooseCategory" onChange="this.form.click()">
                                         <option value = "" selected>Escolha a categoria</option>
-                                        <option type="checkbox" name="option1" value="Livro">Livro</option>
                                         <option value="Artigo">Artigo</option>
-                                        <option value="TCC">TCC</option>
                                         <option value="Dissertação">Dissertação</option>
+                                        <option type="checkbox" name="option1" value="Livro">Livro</option>
+                                        <option value="TCC">TCC</option>
                                         <option value="Tese">Tese</option>
                                     </select>
                                 </fieldset>
@@ -144,16 +143,14 @@
                                     <select name="area" class="form-select" aria-label="Default select example"
                                         id="chooseCategory" onChange="this.form.click()">
                                         <option value="" selected>Escolha a Área</option>
-                                        <option value="Ciências Exatas e da Terra">Ciências Exatas e da Terra</option>
-                                        <option value="Ciências Biológicas">Ciências Biológicas</option>
-                                        <option value="Engenharias">Engenharias</option>
-                                        <option value="Ciências da Saúde">Ciências da Saúde</option>
                                         <option value="Ciências Agrárias">Ciências Agrárias</option>
-                                        <option value="Ciências Sociais Aplicadas">Ciências Sociais Aplicadas</option>
+                                        <option value="Ciências Biológicas">Ciências Biológicas</option>
+                                        <option value="Ciências da Saúde">Ciências da Saúde</option>
+                                        <option value="Ciências Exatas e da Terra">Ciências Exatas e da Terra</option>
                                         <option value="Ciências Humanas">Ciências Humanas</option>
-                                        <option value="Linguística">Linguística</option>
-                                        <option value="Letras">Letras</option>
-                                        <option value="Artes">Artes</option>
+                                        <option value="Ciências Sociais Aplicadas">Ciências Sociais Aplicadas</option>
+                                        <option value="Engenharias">Engenharias</option>
+                                        <option value="Letras">Linguística, Letras e Artes</option>
                                     </select>
                                 </fieldset>
                             </div>
@@ -341,6 +338,9 @@
                         <p>
                             Elaine Cristina Carneiro da Silva
                             <br> Renata Freitas Fernandes
+                            <br> Ana Camila Abreu do Nascimento
+                            <br> Cinthia Layla Abreu do Nascimento
+                            <br> Daniela da Silva
                         </p>
                     </div>
                 </div>

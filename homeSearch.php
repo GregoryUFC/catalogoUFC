@@ -2,7 +2,6 @@
 include_once('./model/search.php');
 ?>
 
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -18,7 +17,6 @@ include_once('./model/search.php');
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-572-designer.css">
@@ -29,7 +27,6 @@ include_once('./model/search.php');
 </head>
 
 <body id="inicio">
-
     <div class="loader">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34px" height="40px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
             <rect x="0" y="10" width="4" height="10" fill="#333" opacity="0.2">
@@ -49,7 +46,6 @@ include_once('./model/search.php');
             </rect>
         </svg>
     </div>
-
     <header id="#top">
 
         <nav class="main-navigation navbar navbar-expand-lg navbar-light">
@@ -115,10 +111,10 @@ include_once('./model/search.php');
                                     <label for="chooseCategory" class="form-label">Tipologia</label>
                                     <select name="tipologia" class="form-select" aria-label="Default select example" id="chooseCategory" onChange="this.form.click()">
                                         <option value="" <?php if ($tipologia == "") echo "selected" ?>>Escolha a categoria</option>
-                                        <option type="checkbox" name="option1" value="Livro" <?php if ($tipologia == "'Livro'") { echo "selected"; } ?>>Livro</option>
                                         <option value="Artigo" <?php if ($tipologia == "'Artigo'") echo "selected" ?>>Artigo</option>
-                                        <option value="TCC" <?php if ($tipologia == "'TCC'") echo "selected" ?>>TCC</option>
                                         <option value="Dissertação" <?php if ($tipologia == "'Dissertação'") echo "selected" ?>>Dissertação</option>
+                                        <option type="checkbox" name="option1" value="Livro" <?php if ($tipologia == "'Livro'") { echo "selected"; } ?>>Livro</option>
+                                        <option value="TCC" <?php if ($tipologia == "'TCC'") echo "selected" ?>>TCC</option>
                                         <option value="Tese" <?php if ($tipologia == "'Tese'") echo "selected" ?>>Tese</option>
                                     </select>
                                 </fieldset>
@@ -128,16 +124,14 @@ include_once('./model/search.php');
                                     <label for="chooseprice" class="form-label">Área do Conhecimento</label>
                                     <select name="area" class="form-select" aria-label="Default select example" id="chooseCategory" onChange="this.form.click()">
                                         <option value="" selected <?php if ($area == "") echo "selected" ?>>Escolha a Área</option>
-                                        <option value="Ciências Exatas e da Terra" <?php if ($area == "exatas") echo "selected" ?>>Ciências Exatas e da Terra</option>
-                                        <option value="Ciências Biológicas" <?php if ($area == "biologicas") echo "selected" ?>>Ciências Biológicas</option>
-                                        <option value="Engenharias" <?php if ($area == "engenharias") echo "selected" ?>>Engenharias</option>
-                                        <option value="Ciências da Saúde" <?php if ($area == "saude") echo "selected" ?>>Ciências da Saúde</option>
                                         <option value="Ciências Agrárias" <?php if ($area == "agrarias") echo "selected" ?>>Ciências Agrárias</option>
-                                        <option value="Ciências Sociais Aplicadas" <?php if ($area == "sociais") echo "selected" ?>>Ciências Sociais Aplicadas</option>
+                                        <option value="Ciências Biológicas" <?php if ($area == "biologicas") echo "selected" ?>>Ciências Biológicas</option>
+                                        <option value="Ciências da Saúde" <?php if ($area == "saude") echo "selected" ?>>Ciências da Saúde</option>
+                                        <option value="Ciências Exatas e da Terra" <?php if ($area == "exatas") echo "selected" ?>>Ciências Exatas e da Terra</option>
                                         <option value="Ciências Humanas" <?php if ($area == "humanas") echo "selected" ?>>Ciências Humanas</option>
-                                        <option value="Linguística" <?php if ($area == "linguistica") echo "selected" ?>>Linguística</option>
-                                        <option value="Letras" <?php if ($area == "letras") echo "selected" ?>>Letras</option>
-                                        <option value="Artes" <?php if ($area == "artes") echo "selected" ?>>Artes</option>
+                                        <option value="Ciências Sociais Aplicadas" <?php if ($area == "sociais") echo "selected" ?>>Ciências Sociais Aplicadas</option>
+                                        <option value="Engenharias" <?php if ($area == "engenharias") echo "selected" ?>>Engenharias</option>
+                                        <option value="Letras" <?php if ($area == "letras") echo "selected" ?>>Linguística, Letras e Artes</option>
                                     </select>
                                 </fieldset>
                             </div>
@@ -257,6 +251,9 @@ include_once('./model/search.php');
                         <p>
                             Elaine Cristina Carneiro da Silva
                             <br> Renata Freitas Fernandes
+                            <br> Ana Camila Abreu do Nascimento
+                            <br> Cinthia Layla Abreu do Nascimento
+                            <br> Daniela da Silva
                         </p>
                     </div>
                 </div>
@@ -265,7 +262,7 @@ include_once('./model/search.php');
                         <h4>Contato</h4>
                         <ul class="info">
                             <li><a href="#">(85)3366-7414</a></li>
-                            <li><a href="#">(85)3366-7414</a></li>
+                            <li><a href="#">(85)3366-7913</a></li>
                             <li><a href="#">memorial@ufc.br</a></li>
                         </ul>
                     </div>
