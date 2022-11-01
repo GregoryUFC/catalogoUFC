@@ -130,8 +130,10 @@
                                         id="chooseCategory" onChange="this.form.click()">
                                         <option value = "" selected>Escolha a categoria</option>
                                         <option value="Artigo">Artigo</option>
+                                        <option value="Capítulo de Livro">Capítulo de Livro</option>
                                         <option value="Dissertação">Dissertação</option>
-                                        <option type="checkbox" name="option1" value="Livro">Livro</option>
+                                        <option value="Entrevista">Entrevista</option>
+                                        <option value="Livro">Livro</option>
                                         <option value="TCC">TCC</option>
                                         <option value="Tese">Tese</option>
                                     </select>

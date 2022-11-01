@@ -56,21 +56,6 @@ include_once('./model/search.php');
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <!--<li class="nav-item">
-                            <a class="nav-link" href="#inicio">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./index.php/">Justificativa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#objetivo">Objetivo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#organizacao">Como foi Organizado</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#agradecimento">Agradecimentos</a>
-                        </li>-->
                     </ul>
                 </div>
             </div>
@@ -112,7 +97,9 @@ include_once('./model/search.php');
                                     <select name="tipologia" class="form-select" aria-label="Default select example" id="chooseCategory" onChange="this.form.click()">
                                         <option value="" <?php if ($tipologia == "") echo "selected" ?>>Escolha a categoria</option>
                                         <option value="Artigo" <?php if ($tipologia == "'Artigo'") echo "selected" ?>>Artigo</option>
+                                        <option value="Capitulo de Livro" <?php if ($tipologia == "'Capitulo de Livro'") echo "selected" ?>>Capítulo de Livro</option>
                                         <option value="Dissertação" <?php if ($tipologia == "'Dissertação'") echo "selected" ?>>Dissertação</option>
+                                        <option value="Entrevista" <?php if ($tipologia == "'Entrevista'") echo "selected" ?>>Entrevista</option>
                                         <option type="checkbox" name="option1" value="Livro" <?php if ($tipologia == "'Livro'") { echo "selected"; } ?>>Livro</option>
                                         <option value="TCC" <?php if ($tipologia == "'TCC'") echo "selected" ?>>TCC</option>
                                         <option value="Tese" <?php if ($tipologia == "'Tese'") echo "selected" ?>>Tese</option>
@@ -220,7 +207,13 @@ include_once('./model/search.php');
                                     </td>-->
                                     <td>
                                         <?php
-                                            echo $return[$i][10];
+                                            //echo "Acessar <a href='". echo $return[$i][10] . echo "'Link";
+                                            if($return[$i][10]=="-"){
+                                                echo "-";
+                                            }else{
+                                                echo "<a target='_blank' href='".$return[$i][10]."'>Acessar o Link</a>";
+                                            }
+                                            
                                         ?>
                                     </td>
                                 </tr>
